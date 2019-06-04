@@ -1,0 +1,44 @@
+// EmpItem.h : interface of the CEmpItem class
+//
+
+#if !defined(AFX_EMPITEM_H__B3C37DF3_D94D_4070_B753_B21F0F215459__INCLUDED_)
+#define AFX_EMPITEM_H__B3C37DF3_D94D_4070_B753_B21F0F215459__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+class CEmpDoc;
+class CEmpView;
+
+class CEmpItem : public CRichEditCntrItem
+{
+// Constructors
+public:
+	CEmpItem(REOBJECT* preo = NULL, CEmpDoc* pContainer = NULL);
+
+// Attributes
+public:
+	CEmpDoc* GetDocument()
+		{ return (CEmpDoc*)CRichEditCntrItem::GetDocument(); }
+	CEmpView* GetActiveView()
+		{ return (CEmpView*)CRichEditCntrItem::GetActiveView(); }
+
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CEmpItem)
+	public:
+	protected:
+	//}}AFX_VIRTUAL
+
+// Implementation
+public:
+	~CEmpItem();
+	DECLARE_SERIAL(CEmpItem)
+};
+
+/////////////////////////////////////////////////////////////////////////////
+
+//{{AFX_INSERT_LOCATION}}
+// Microsoft Visual C++ will insert additional declarations immediately before the previous line.
+
+#endif // !defined(AFX_EMPITEM_H__B3C37DF3_D94D_4070_B753_B21F0F215459__INCLUDED_)

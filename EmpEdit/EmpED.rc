@@ -1,0 +1,819 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EmpED.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolecl.rc""       // OLE container resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\EmpED.ico"
+IDR_EMPEDDOC            ICON                    "RES\\EMPEDDOC.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_PREV_ZOOMIN         BITMAP                  "res\\PZoomout.BMP"
+IDB_PREV_HOME           BITMAP                  "res\\PHome.BMP"
+IDB_PREV_NEXT           BITMAP                  "res\\PNext.BMP"
+IDB_PREV_ONE            BITMAP                  "res\\POne.BMP"
+IDB_PREV_PREVIOUS       BITMAP                  "res\\PPrev.BMP"
+IDB_PREV_PRINT          BITMAP                  "res\\PPrint.BMP"
+IDB_PREV_TWO            BITMAP                  "res\\PTwo.BMP"
+IDB_PREV_ZOOMOUT        BITMAP                  "res\\PZoomin.bmp"
+IDB_PREV_END            BITMAP                  "res\\PEnd.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 20
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_SET_LEVEL
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FORMAT_FONT
+    BUTTON      ID_FORMAT_COLOR
+    BUTTON      ID_FORMAT_BOLD
+    BUTTON      ID_FORMAT_ITALIC
+    BUTTON      ID_FORMAT_UNDERLINE
+    BUTTON      ID_FORMAT_STRIKEOUT
+    BUTTON      ID_FORMAT_SUPERSCRIPT
+    BUTTON      ID_FORMAT_SUBSCRIPT
+    SEPARATOR
+    BUTTON      ID_OLE_INSERT_NEW
+    BUTTON      ID_EDIT_INSERTSYMBOL
+    SEPARATOR
+    BUTTON      ID_BUILDTEST
+    BUTTON      ID_CONVERT
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FILE_PRINT_PREVIEW
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Set Document &Level...\tCtrl+L", ID_FILE_SET_LEVEL
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...\tCtrl+R",     ID_FILE_PRINT_SETUP
+        MENUITEM "Load Prin&ted File...\tCtrl+T", ID_FILE_PRINT_LOAD
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Paste &Special...",           ID_EDIT_PASTE_SPECIAL
+        MENUITEM "Select A&ll\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "F&ind Next\tF3",              ID_EDIT_REPEAT
+        MENUITEM "R&eplace\tCtrl+H",            ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "Insert S&ymbols\tCtrl+Y",     ID_EDIT_INSERTSYMBOL
+        MENUITEM SEPARATOR
+        MENUITEM "Insert &New Object...",       ID_OLE_INSERT_NEW
+        MENUITEM "Show Selected Obj&ect\tCtrl+E", ID_EDIT_OLE_SHOW
+        MENUITEM "Lin&ks...",                   ID_OLE_EDIT_LINKS
+        MENUITEM "Object P&roperties\tAlt+Enter", ID_OLE_EDIT_PROPERTIES
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+    END
+    POPUP "For&mat"
+    BEGIN
+        MENUITEM "&Bold",                       ID_FORMAT_BOLD
+        MENUITEM "&Italic",                     ID_FORMAT_ITALIC
+        MENUITEM "&UnderLine",                  ID_FORMAT_UNDERLINE
+        MENUITEM "Stri&ke Out",                 ID_FORMAT_STRIKEOUT
+        MENUITEM "Super Script",                ID_FORMAT_SUPERSCRIPT
+        MENUITEM "Sub Script",                  ID_FORMAT_SUBSCRIPT
+        MENUITEM "&Color",                      ID_FORMAT_COLOR
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&System"
+    BEGIN
+        MENUITEM "Build Document for Test Program", ID_BUILDTEST
+        MENUITEM "Convert DOS version to Windows", ID_CONVERT
+        MENUITEM SEPARATOR
+        MENUITEM "&Help",                       ID_HELP
+        MENUITEM "&About Editor...",            ID_APP_ABOUT
+    END
+END
+
+IDR_CNTR_INPLACE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_INSERTSYMBOL,   VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY, NOINVERT
+    "H",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_FILE_PRINT_LOAD,     VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_FILE_PRINT_SETUP,    VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_FILE_SET_LEVEL,      VIRTKEY, CONTROL, NOINVERT
+    "B",            ID_FORMAT_BOLD,         VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_FORMAT_ITALIC,       VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_FORMAT_STRIKEOUT,    VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_FORMAT_UNDERLINE,    VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY, ALT, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "E",            ID_EDIT_OLE_SHOW,       VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_CNTR_INPLACE ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 186, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "About Editor"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Exercise Maintenance Program. Version 2.3",IDC_STATIC,
+                    39,47,140,8,SS_NOPREFIX
+    LTEXT           "Editor Program of EMP sotware series.",IDC_STATIC,39,60,
+                    140,8
+    DEFPUSHBUTTON   "OK",1,147,96,32,14,WS_GROUP
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,14,21,20,SS_CENTERIMAGE
+    LTEXT           "- Vu Thi Lien Huong",IDC_STATIC,59,88,70,8
+    LTEXT           "* Staff of Project:",IDC_STATIC,37,77,108,8
+    LTEXT           "Informatics Department.",IDC_STATIC,37,31,138,8
+    LTEXT           "University of Economics, Ho Chi Minh City",IDC_STATIC,
+                    37,19,138,8
+    LTEXT           "Contact Author for new version.",IDC_STATIC,41,110,101,
+                    8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ | SS_SUNKEN,37,42,
+                    141,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ | SS_SUNKEN,37,72,
+                    141,1
+    LTEXT           "- Le Ngoc Thanh",IDC_STATIC,59,99,70,8
+    LTEXT           "Ministry of Education && Training - Viet Nam",
+                    IDC_STATIC,37,7,138,8
+END
+
+IDD_BUILDTEST DIALOGEX 0, 0, 264, 190
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Test Data File Builder"
+FONT 10, "EMP.Font", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "TÁp tin ≠ã thi:",IDC_BUILDSAVE,5,5,47,12,BS_CENTER | 
+                    BS_VCENTER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_BUILDFILE,53,5,167,12,ES_AUTOHSCROLL
+    CONTROL         "Emp.1996",IDC_BUILDDOSVER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,225,7,34,10
+    PUSHBUTTON      "Chîn tÁp tin:",IDC_BUILDSELE,5,20,47,12,BS_CENTER | 
+                    BS_VCENTER,WS_EX_STATICEDGE
+    LISTBOX         IDC_BUILDLIST,53,20,206,72,LBS_OWNERDRAWVARIABLE | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Theo th§ t®",IDC_KEEPFILEORDER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,36,43,11
+    LTEXT           "Sñ cÉu:",IDC_STATIC,8,63,20,11,SS_CENTERIMAGE
+    CTEXT           "0",IDC_BUILDTOTAL,32,63,17,11,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Æ‰u ≠ã bÖi thi:",IDC_STATIC,6,95,40,8
+    EDITTEXT        IDC_BUILDTITLE,53,95,206,27,ES_CENTER | ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Sñ ph£t:",IDC_STATIC,6,111,23,8
+    EDITTEXT        IDC_TIMEDONE,31,109,21,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",IDC_TIMESPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,43,113,8,
+                    13
+    LTEXT           "Sñ ≠ã thi / 1ca:",IDC_STATIC,6,127,42,8
+    EDITTEXT        IDC_BUILDITEM,53,125,19,12,ES_RIGHT | ES_NUMBER
+    CONTROL         "Spin2",IDC_BUILDSPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,69,124,8,
+                    13
+    RTEXT           "Tàn bÖi thi:",IDC_STATIC,90,127,31,8
+    EDITTEXT        IDC_BUILDMTLE,124,125,135,12
+    CONTROL         "TÁp tin ≠ã thi",IDC_TOFILE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,15,152,48,10
+    CONTROL         "Xem ≠ã thi",IDC_PREVIEW,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,15,163,48,10
+    CONTROL         "In ra m†y in",IDC_TOPRINTER,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,15,174,48,10
+    RTEXT           "MÁt khÂu ≠ã thi:",IDC_STATIC,77,147,44,8
+    EDITTEXT        IDC_PASSWORD,124,145,73,12,ES_PASSWORD | ES_AUTOHSCROLL
+    RTEXT           "NhÁp l‚i:",IDC_STATIC,77,163,44,8
+    EDITTEXT        IDC_PASSWORD2,124,161,73,12,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Progress2",IDC_BUILDPROG,"msctls_progress32",0x0,77,179,
+                    182,6
+    DEFPUSHBUTTON   "Th®c hi¨n",1,210,145,39,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Kât th£c",IDCANCEL,210,161,39,12,0,WS_EX_STATICEDGE
+    GROUPBOX        "Lüu kât qu‡",IDC_STATIC,6,142,63,43
+END
+
+IDD_CONVERTDLG DIALOGEX 0, 0, 207, 131
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Convert to New Data Format"
+FONT 10, "EMP.Font", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "TÁp tin nguòn",IDC_CVT_SRCFILES,7,7,50,12,BS_CENTER | 
+                    BS_VCENTER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_CVT_SRCFILE,59,7,131,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "TÁp tin kât qu‡",IDC_CVT_DSTFILES,7,22,50,12,BS_CENTER | 
+                    BS_VCENTER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_CVT_DSTFILE,59,22,131,12,ES_AUTOHSCROLL
+    CONTROL         "TÁp tin kho dß li¨u nguòn (*.emp)",IDC_CVT_EMPFILE,
+                    "Button",BS_AUTORADIOBUTTON | BS_VCENTER | WS_GROUP,15,
+                    49,141,10
+    CONTROL         "TÁp tin dß li¨u ≠ã thi (*.zmp) cúa TEST.EXE.",
+                    IDC_CVT_ZMPFILE,"Button",BS_AUTORADIOBUTTON | BS_VCENTER,
+                    15,61,141,10
+    RTEXT           "Sñ ph£t:",IDC_STATIC,24,75,23,10
+    EDITTEXT        IDC_TIMEDONE,49,74,21,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_TIMESPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,61,68,10,
+                    19
+    LTEXT           "Menu:",IDC_STATIC,74,75,18,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_CVT_MENU,94,74,103,12,ES_AUTOHSCROLL
+    RTEXT           "MÁt khÂu ≠ã thi:",IDC_STATIC,14,98,44,8
+    EDITTEXT        IDC_PASSWORD,61,96,74,12,ES_PASSWORD | ES_AUTOHSCROLL
+    RTEXT           "NhÁp l‚i:",IDC_STATIC,14,113,44,8
+    EDITTEXT        IDC_PASSWORD2,61,111,74,12,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Th®c hi¨n",1,152,96,35,12
+    PUSHBUTTON      "Kât th£c",IDCANCEL,152,111,35,12
+    GROUPBOX        "D‚ng kât qu‡",IDC_STATIC,7,38,193,53
+END
+
+IDD_SYMBOLDLG DIALOGEX 0, 0, 187, 95
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_STATICEDGE
+CAPTION "Insert Symbols"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Insert",1,130,7,50,14
+    PUSHBUTTON      "Close",IDCANCEL,130,24,50,14
+END
+
+IDD_PREVIEW DIALOG  0, 0, 219, 19
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",AFX_ID_PREVIEW_PRINT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,4,3,15,13
+    CONTROL         "",AFX_ID_PREVIEW_NEXT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,23,3,15,13
+    CONTROL         "",AFX_ID_PREVIEW_PREV,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,42,3,15,13
+    CONTROL         "",AFX_ID_PREVIEW_NUMPAGE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,61,3,15,13
+    CONTROL         "",AFX_ID_PREVIEW_ZOOMIN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,80,3,15,13
+    CONTROL         "",AFX_ID_PREVIEW_ZOOMOUT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,99,3,15,13
+    PUSHBUTTON      "&Close",AFX_ID_PREVIEW_CLOSE,127,3,37,13
+END
+
+IDD_SETLEVEL DIALOGEX 0, 0, 127, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Group Setting"
+FONT 10, "EMP.Font", 0, 0, 0x1
+BEGIN
+    CTEXT           "Doc title",IDC_DOCTITLE,7,7,113,11,SS_CENTERIMAGE
+    CTEXT           "Än ≠´nh thìng sñ cho nh¢m hi¨n hÖnh",IDC_STATIC,7,22,
+                    113,11,SS_CENTERIMAGE
+    RTEXT           "KÓ hi¨u nh¢m:",IDC_STATIC,26,40,42,11
+    EDITTEXT        IDC_LEVEL_MARK,72,38,25,12,ES_CENTER | ES_AUTOHSCROLL
+    RTEXT           "H¨ sñ:",IDC_STATIC,26,57,42,11
+    EDITTEXT        IDC_LEVEL,72,55,25,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_LEVELSPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,95,54,9,
+                    13
+    PUSHBUTTON      "Æòng Ó",IDOK,30,73,28,13,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Tho†t",IDCANCEL,69,73,28,13,0,WS_EX_STATICEDGE
+END
+
+IDD_QSTSEGMENT DIALOGEX 0, 0, 118, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTERMOUSE | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Number of questions in each level"
+FONT 8, "EMP.Font", 400, 0, 0x0
+BEGIN
+    LISTBOX         IDC_QSTSEG_LIST,3,3,112,61,LBS_OWNERDRAWVARIABLE | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Tông sñ cÉu:",IDC_STATIC,3,68,36,9
+    CTEXT           "0",IDC_QSTSEG_SOCAUCHON,40,67,19,11,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "OK",IDOK,62,66,26,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",IDCANCEL,88,66,27,12,0,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Editor for test program"
+            VALUE "CompanyName", "LNTsoft"
+            VALUE "FileDescription", "Editor Program of LNTsoft"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "EmpED"
+            VALUE "LegalCopyright", "Copyright (C) 2001, by Le Ngoc Thanh"
+            VALUE "OriginalFilename", "Editor.EXE"
+            VALUE "ProductName", "Editor"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_BUILDTEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 259
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_CONVERTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_SYMBOLDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PREVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 16
+    END
+
+    IDD_SETLEVEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_QSTSEGMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 115
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 78
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_MOVEITEM            CURSOR                  "res\\arrow.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_BUILDTEST            "T‚o dß li¨u cho chüÛng trçnh thi TEST hoÌc in ra gi„y\nBuild Test"
+    ID_FORMAT_BOLD          "ÆÌt hay ng•ng ≠Ìt châ ≠õ chß ≠Ám\nBold"
+    ID_FORMAT_ITALIC        "ÆÌt hay ng•ng ≠Ìt châ ≠õ chß nghiàng\nItalic"
+    ID_FORMAT_UNDERLINE     "ÆÌt hay ng•ng ≠Ìt châ ≠õ chß g‚ch düÙi\nUnderline"
+    ID_FORMAT_COLOR         "Chîn mÖu cho chß\nColor"
+    ID_FORMAT_STRIKEOUT     "ÆÌt hay ng•ng ≠Ìt châ ≠õ chß g‚ch ngang\nStrike"
+    ID_CONVERT              "Chuyén c†c dß li¨u cúa chüÛng trçnh ch‚y trong DOS sang Windows\nConvert"
+    ID_EDIT_INSERTSYMBOL    "Chän kÓ hi¨u vÖo nõi dung vËn b‡n ≠ang so‚n th‡o\nInsert symbol"
+    ID_FILE_SET_LEVEL       "ÆÌt h¨ sñ cho c†c cÉu hëi trong nõi dung ≠ang so‚n th‡o\nGroup Level"
+    ID_FILE_PRINT_LOAD      "Æîc dß li¨u t• c†c tÁp tin in „n cúa Editor\nLoad"
+    ID_EDIT_OLE_SHOW        "Show selected OLE object in a private window\nShow Object"
+END
+
+STRINGTABLE 
+BEGIN
+    IDOK                    "Th®c hi¨n cìng vi¨c theo c†c „n ≠´nh ˆ tràn"
+    IDCANCEL                "Kât th£c"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_FAILED_TO_CREATE    "Failed to create object.  Make sure the object is entered in the system registry."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Editor\nNew Document\nEditor\nEditor Document (*.emp)\n.emp\nEditor Document\nEditor Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Editor"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "T‚o dß li¨u mÙi\nNew"
+    ID_FILE_OPEN            "Mˆ tÁp tin dß li¨u cúa editor\nOpen"
+    ID_FILE_CLOSE           "Æ¢ng tÁp tin dß li¨u cúa editor\nClose"
+    ID_FILE_SAVE            "Lüu nõi dung so‚n th‡o vÖo tÁp tin dß li¨u\nSave"
+    ID_FILE_SAVE_AS         "Lüu nõi dung so‚n th‡o vÖo tÁp tin dß li¨u kh†c\nSave As"
+    ID_FILE_PAGE_SETUP      "Thay ≠ôi c†c „n ≠´nh cúa trang gi„y in\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Thay ≠ôi c†c „n ≠´nh cúa m†y in\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Xem trüÙc nõi dung trang in\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Xem thìng tin vã §ng dûng\nAbout"
+    ID_APP_EXIT             "Kât th£c chüÛng trçnh\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_PASTE_LINK      "Insert Clipboard contents and a link to its source\nPaste Link"
+    ID_EDIT_PASTE_SPECIAL   "Insert Clipboard contents with options\nPaste Special"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Chän dß li¨u hçnh ‡nh, cìng th§c, dß li¨u word, dß li¨u excel,... vÖo nõi dung so‚n th‡o\nInsert Object"
+    ID_OLE_EDIT_LINKS       "Edit linked objects\nEdit Links"
+    ID_OLE_EDIT_CONVERT     "Convert object to different type\nConvert Object"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "Activate embedded or linked object"
+    57873                   "Activate embedded or linked object"
+    57874                   "Activate embedded or linked object"
+    57875                   "Activate embedded or linked object"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FORMAT_FONT          "Chîn font chß cho nõi dung so‚n th‡o\nFont"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_ID_PREVIEW_CLOSE    "Tho†t khëi §ng dûng in „n\nClose"
+    AFX_ID_PREVIEW_NUMPAGE  "View One / Two print pages in the view\nOne-Two"
+    AFX_ID_PREVIEW_NEXT     "View the next print page\nNext"
+    AFX_ID_PREVIEW_PREV     "View the previous print page\nPrevious"
+    AFX_ID_PREVIEW_PRINT    "Print pages to Printer\nPrint"
+    AFX_ID_PREVIEW_ZOOMIN   "Zoom in the view magnification\nZoom In"
+    AFX_ID_PREVIEW_ZOOMOUT  "Zoom out the view magnification\nZoom Out"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FORMAT_SUPERSCRIPT   "ÆÌt hay ng•ng ≠Ìt châ ≠õ chß nhë tràn cao\nSuperscript"
+    ID_FORMAT_SUBSCRIPT     "ÆÌt hay ng•ng ≠Ìt châ ≠õ chß nhë düÙi th„p\nSubscript"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_BUILDSAVE           "Chîn ≠üıng dÊn vÖ tàn tÁp tin ch§a\nc†c ≠ã thi trÈc nghi¨m ≠ü¯c t‚o ra"
+    IDC_BUILDFILE           "Æüıng dÊn vÖ tàn tÁp tin ch§a\nc†c ≠ã thi trÈc nghi¨m"
+    IDC_BUILDDOSVER         "T‚o tÁp tin dß li¨u cho chüÛng trçnh\ntrÈc nghi¨m trong mìi trüıng DOS"
+    IDC_BUILDSELE           "Chîn tÁp tin ch§a ≠ã thi nguòn cho\nm§c kâ tiâp cúa ≠ã thi. C¢ thé\nchîn nhiãu tÁp tin cho mõt m§c"
+    IDC_BUILDLIST           "Danh s†ch c†c tÁp tin ch§a ≠ã thi nguòn\ntrong möi m§c vÖ h¨ sñ s¶ dûng"
+    IDC_BUILDTITLE          "Nõi dung ≠‰u cúa möi ≠ã thi\nLüu Ó: Khìng x¢a c†c d„u %d"
+    IDC_BUILDITEM           "Sñ ≠ã thi t‚o ra trong mõt tÁp tin ≠ã thi"
+    IDC_BUILDMTLE           "Mûc nhÁn di¨n ≠ã thi tràn h¨ thñng\nmenu cúa §ng dûng Test.EXE"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_BUILDTOTAL          "Tông sñ cÉu hëi cúa ≠ã thi ≠ü¯c chîn\nt• c†c m§c cúa c†c ≠ã thi nguòn "
+    IDC_CVT_SRCFILE         "Tàn tÁp tin chuyén d‚ng nguòn"
+    IDC_CVT_DSTFILE         "Æüıng dÊn, tàn tÁp tin Editor document\nch§a kât qu‡ chuyén"
+    IDC_CVT_SRCFILES        "Chîn tÁp tin chuyén d‚ng nguòn"
+    IDC_CVT_DSTFILES        "Än ≠´nh tàn tÁp tin Editor document\nch§a kât qu‡ chuyén"
+    IDC_CVT_EMPFILE         "Th®c hi¨n chuyén dß li¨u ≠ã thi nguòn"
+    IDC_CVT_ZMPFILE         "Th®c hi¨n chuyén dß li¨u ≠ã thi"
+    IDC_CVT_MENU            "Mûc nhÁn di¨n ≠ã thi tràn h¨ thñng\nmenu cúa §ng dûng Test.EXE"
+    IDC_PASSWORD            "MÁt khÂu b‡o v¨ ≠ã thi. Æã thi nÖy ch© s¶\ndûng ≠ü¯c cho thi trÈc nghi¨m tràn m‚ng"
+    IDC_PASSWORD2           "MÁt khÂu b‡o v¨ ≠ã thi. Æã thi nÖy ch© s¶\ndûng ≠ü¯c cho thi trÈc nghi¨m tràn m‚ng"
+    IDC_TOFILE              "Lüu c†c ≠ã thi t‚o ≠ü¯c vÖo tÁp tin\n≠é s¶ dûng bˆi chüÛng trçnh Test.EXE"
+    IDC_PREVIEW             "Æã thi t‚o ra ≠ü¯c hién th´ làn mÖn\nhçnh vÖ c¢ thé in ra m†y in"
+    IDC_TOPRINTER           "In t„t c‡ ≠ã thi t‚o ≠ü¯c ra m†y in"
+    IDC_TIMEDONE            "Thıi gian lÖm bÖi thi cúa th° sinh"
+    IDC_DOCTITLE            "Tàn tÁp tin ≠ã thi nguòn"
+    IDC_LEVEL               "Än ≠´nh m§c ≠õ kh¢ cho c†c cÉu hëi\ntrong ≠ã thi nguòn. M§c th„p nh„t lÖ 1."
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_KEEPFILEORDER       "Æã thi t‚o ra c¢ th§ t® bñ cûc tüÛng\n§ng th§ t® cúa c†c tÁp tin ≠ü¯c chîn"
+    IDC_LEVEL_MARK          "Chîn kÓ t® phÉn nh¢m cÉu hëi"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\EmpED.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxolecl.rc"       // OLE container resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
