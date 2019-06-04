@@ -1,0 +1,385 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Emp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxolecl.rc""       // OLE container resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Emp.ico"
+IDR_EMPTESTDOC          ICON                    "res\\TestDoc.ICO"
+IDI_NET3                ICON                    "res\\Net2pc_3.ico"
+IDI_NET2                ICON                    "res\\Net2pc_2.ico"
+IDI_NET1                ICON                    "res\\Net2pc_1.ico"
+IDI_NET0                ICON                    "res\\Net2pc_0.ico"
+IDI_QST_MARK            ICON                    "res\\net4.ico"
+IDI_QST_ANSWER          ICON                    "res\\qst_mark.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_QSTSBMP             BITMAP                  "res\\bitmap.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_OPEN_ITEM
+    BUTTON      ID_SAVE_ITEM
+    BUTTON      ID_ANSWER
+    SEPARATOR
+    BUTTON      ID_QUESTION
+    BUTTON      ID_TEST
+    BUTTON      ID_HELP
+    SEPARATOR
+    BUTTON      ID_TOP
+    BUTTON      ID_PREV
+    BUTTON      ID_NEXT
+    BUTTON      ID_BOTTOM
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&Selections"
+    BEGIN
+        MENUITEM "New &Exercise...",            ID_OPEN_ITEM
+        MENUITEM SEPARATOR
+        MENUITEM "&Save Result",                ID_SAVE_ITEM
+        MENUITEM "E&xit",                       ID_EXIT
+    END
+    POPUP "&Questions"
+    BEGIN
+        MENUITEM "Go &Top",                     ID_TOP
+        MENUITEM "Skip &Previous",              ID_PREV
+        MENUITEM "Skip &Next",                  ID_NEXT
+        MENUITEM "Go &Bottom",                  ID_BOTTOM
+        MENUITEM SEPARATOR
+        MENUITEM "&Answer Keys",                ID_ANSWER
+    END
+    POPUP "&Windows"
+    BEGIN
+        MENUITEM "Work with Test",              ID_TEST
+        MENUITEM "Questions List",              ID_QUESTION
+        MENUITEM "Student Info...",             ID_STUDENT
+        MENUITEM SEPARATOR
+        MENUITEM "Help Topics",                 ID_HELP
+        MENUITEM "About Test...",               ID_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "A",            ID_ANSWER,              VIRTKEY, CONTROL, NOINVERT
+    "B",            ID_BOTTOM,              VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_MYNETINFO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_NEXT,                VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_OPEN_ITEM,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_PREV,                VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          ID_QUIT,                VIRTKEY, CONTROL, ALT, NOINVERT
+    "S",            ID_SAVE_ITEM,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_TOP,                 VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 186, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "About Test Program"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Exercise Maintenance Program. Version 2.1",IDC_STATIC,
+                    39,47,140,8,SS_NOPREFIX
+    LTEXT           "Test Program of EMP sotware series.",IDC_STATIC,39,60,
+                    140,8
+    DEFPUSHBUTTON   "OK",1,147,96,32,14,WS_GROUP
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,14,21,20,SS_CENTERIMAGE
+    LTEXT           "- Vu Thi Lien Huong",IDC_STATIC,59,88,70,8
+    LTEXT           "* Staff of Project:",IDC_STATIC,37,77,108,8
+    LTEXT           "Informatics Department.",IDC_STATIC,37,31,138,8
+    LTEXT           "University of Economics, Ho Chi Minh City",IDC_STATIC,
+                    37,19,138,8
+    LTEXT           "Contact Author for new version.",IDC_STATIC,41,110,101,
+                    8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ | SS_SUNKEN,37,42,
+                    142,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ | SS_SUNKEN,37,72,
+                    142,1
+    LTEXT           "- Le Ngoc Thanh",IDC_STATIC,59,99,70,8
+    LTEXT           "Ministry of Education && Training - Viet Nam",
+                    IDC_STATIC,37,7,138,8
+END
+
+IDD_NEWITEM DIALOGEX 0, 0, 173, 150
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "NoSelection"
+FONT 10, "EMP.Font", 0, 0, 0x0
+BEGIN
+    CTEXT           "",IDC_ITEM_MESS,7,7,159,42,SS_SUNKEN
+    GROUPBOX        "",IDC_ITEM_NET,7,50,159,75
+    LTEXT           "Sñ b†o danh:",IDC_ITEM_SOBDL,12,59,35,12,SS_CENTERIMAGE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_ITEM_SOBD,50,59,41,12,ES_UPPERCASE | WS_DISABLED
+    LTEXT           "LÙp:",IDC_ITEM_LOPL,12,75,35,12,SS_CENTERIMAGE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_ITEM_LOP,50,75,41,12,WS_DISABLED
+    LTEXT           "Hî vÖ Tàn:",IDC_ITEM_HOTENL,12,91,35,12,SS_CENTERIMAGE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_ITEM_HOTEN,50,91,110,12,WS_DISABLED
+    LTEXT           "NgÖy sinh:",IDC_ITEM_NGAYSINHL,12,107,35,14,
+                    SS_CENTERIMAGE | WS_DISABLED
+    EDITTEXT        IDC_ITEM_NGAYSINH,50,107,50,12,WS_DISABLED
+    LTEXT           "Æã thi:",IDC_ITEM_DEL,15,130,22,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_ITEM_DE,50,130,22,12,ES_RIGHT | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_ITEM_DESPN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,71,127,8,15
+    DEFPUSHBUTTON   "Tho†t",IDCANCEL,135,130,31,12,NOT WS_VISIBLE
+    PUSHBUTTON      "Æòng Ó",IDC_ITEM_OK,135,130,31,12,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Test Program"
+            VALUE "CompanyName", "LNT.2003"
+            VALUE "FileDescription", "Test Program of LNTsoft"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Test"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "LegalTrademarks", "LNT."
+            VALUE "OriginalFilename", "Test.EXE"
+            VALUE "ProductName", "LNT.Test"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_NEWITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_TEST_MARK           CURSOR                  "res\\TestMark.cur"
+IDC_TEST_PULL           CURSOR                  "res\\TestPull.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Test\nNoSelection"
+    IDS_MESS_SAISOBD        "\nSñ b†o danh khìng h¯p l¨.\nÆã ngh´ B‚n nhÁp l‚i.\nNhÁp xong chîn 'Æòng Ó'."
+    IDS_MESS_XACNHAN        "\nÆã ngh´ xem l‚i c†c thìng tin cúa B‚n.\nC¢ thé ch©nh s¶a nâu c‰n.\nTh®c hiàn xong chîn 'Æòng Ó'."
+    IDS_MESS_CHONDE         "\nChuyàn mûc nÖy c¢  %d  ≠ã thi.\nB‚n cho biât sñ th§ t® cúa bÖi thi\nmÖ B‚n muñn th®c hi¨n."
+    IDS_MESS_CHONMUC        "\nB‚n chüa chîn chuyàn mûc thi.\nVÖo menu 'Selections' chîn chuyàn mûc,\nsau ≠¢ chîn l‚i mûc 'New Exercise'"
+    IDS_MESS_KETQUA         "\nB‚n tr‡ lıi ≠£ng  %d  cÉu hëi ( = %0.1f≠ )\ntràn tông sñ  %d  cÉu hëi cúa ≠ã thi.\n"
+    IDS_MESS_CONNECT        "\n\nÆang tçm M†y Gi†m Th´..."
+    IDS_MESS_ACCEPT         "\nÆang liàn l‚c vÙi M†y Gi†m Th´.\nTrong thıi gian chı ≠¯i hi¨u l¨nh thi,\nTh° sinh khìng ≠ü¯c tÈt m†y !"
+    IDS_MESS_DOTEST         "\nÆ· ≠ân giı lÖm bÖi\nTh° sinh nhÁp cÂn thÁn thìng tin cúa mçnh\nLÙp, Sñ b†o danh, Hî tàn, NgÖy sinh."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Test"
+    AFX_IDS_IDLEMESSAGE     "ChüÛng trçnh ≠· sÏn sÖng !"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SAVE_ITEM            "Lüu kât qu‡ ra ≠™a\nSave Result"
+    ID_ANSWER               "Xem kât qu‡ cúa bÖi lÖm hi¨n hÖnh\nAnswer Keys"
+    ID_OPEN_ITEM            "Chîn bÖi tÁp mÙi\nNew Exercise"
+    ID_ABOUT                "Xem thìng tin cúa chüÛng trçnh\nAbout Emp."
+    ID_EXIT                 "Kât th£c chüÛng trçnh\nExit"
+    ID_PREV                 "Æân cÉu hëi trüÙc ≠¢\nPrevious"
+    ID_NEXT                 "Æân cÉu hëi kâ tiâp\nNext"
+    ID_BOTTOM               "Vã cÉu hëi cuñi cóng\nBottom"
+    ID_TOP                  "Vã cÉu hëi ≠‰u tiàn\nTop"
+    ID_TEST                 "Chuyén sang mÖn hçnh lÖm bÖi thi\nTest Working"
+    ID_STUDENT              "NhÁp l‚i thìng tin cúa sinh viàn\nStudent Registration"
+    ID_QUESTION             "Thao t†c tràn danh s†ch cÉu hëi\nQuestion List"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_HELP                 "Xem thìng tin tr¯ gi£p\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch to the previous window pane\nNext Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_LOP        "  Class  "
+    ID_INDICATOR_SOBD       "  Std-ID  "
+    ID_INDICATOR_HOTEN      "  Student Full Name  "
+    ID_INDICATOR_NGAYSINH   "  BirdthDate  "
+    ID_INDICATOR_NETTIME    "  Wait........."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Emp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxolecl.rc"       // OLE container resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
